@@ -1,0 +1,8 @@
+confluence:
+  url: https://confluence.ssc-spc.gc.ca
+  username:
+  token:
+  space: CMS
+
+defaults:
+  author: Troy Lawson
