@@ -6,7 +6,7 @@ class ConfluencePublisher(BasePublisher):
     def connect(self):
         raise NotImplementedError
 
-    def find_page(self, title, parent=None):
+    def find_page(self, page, parent=None):
         raise NotImplementedError
 
     def create_page(self, page, parent=None):

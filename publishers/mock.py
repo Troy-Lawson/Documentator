@@ -8,7 +8,7 @@ class MockPublisher(BasePublisher):
     def connect(self):
         print("Connected to MockPublisher")
 
-    def find_page(self, title, parent=None):
+    def find_page(self, page, parent=None):
         return None
 
     def create_page(self, page, parent=None):

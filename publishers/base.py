@@ -9,7 +9,7 @@ class DocumentationProvider(ABC):
         """Initialize and required connections"""
 
     @abstractmethod
-    def find_page(self, title: str, parent=None):
+    def find_page(self, page: Page, parent=None):
         """REturn the provider-specific page object or None."""
 
     @abstractmethod
