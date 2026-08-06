@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 from models.page import Page
 
-class DocumentationProvider(ABC):
+class BasePublisher(ABC):
 
     @abstractmethod
     def connect(self) -> None:

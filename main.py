@@ -1,5 +1,6 @@
 from pathlib import Path
 from publishers.mock import MockPublisher
+from publisher_engine import PublisherEngine
 
 from loaders.stucture import load_structure
 
@@ -11,6 +12,7 @@ def main():
 
     engine = PublisherEngine(publisher)
 
+    engine.publish(root)
     engine.publish(root)
 
 
