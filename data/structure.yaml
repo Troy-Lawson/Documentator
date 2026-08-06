@@ -1,0 +1,13 @@
+title: CMS
+
+children:
+  - title: Onboarding
+  - title: General Operations
+  - title: Clients
+    children:
+      - title: ESDC
+      - title: IRCC
+  - title: Platforms
+  - title: Daily Notes
+  - title: Operations
+   
