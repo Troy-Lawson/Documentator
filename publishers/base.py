@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 
 from models.page import Page
 
-class BasePublisher(ABC):
 
+class BasePublisher(ABC):
     @abstractmethod
     def connect(self) -> None:
         """Initialize and required connections"""

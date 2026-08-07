@@ -1,5 +1,3 @@
-from datetime import datetime
-
 class Note:
     def __init__(self, timestamp, author, category, text):
         self.timestamp = timestamp

@@ -1,0 +1,10 @@
+# Copy this file to config.yaml and provide values for your environment.
+# Never commit credentials or private instance details.
+confluence:
+  url: https://confluence.example.com
+  username: user@example.com
+  token: replace-with-an-api-token
+  space: EXAMPLE
+
+defaults:
+  author: Example Author

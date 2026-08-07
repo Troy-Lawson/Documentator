@@ -2,7 +2,6 @@ from publishers.base import BasePublisher
 
 
 class ConfluencePublisher(BasePublisher):
-
     def connect(self):
         raise NotImplementedError
 
