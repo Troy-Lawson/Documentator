@@ -1,8 +1,9 @@
 from pathlib import Path
-from publishers.mock import MockPublisher
-from publisher_engine import PublisherEngine
 
-from loaders.stucture import load_structure
+from loaders.structure import load_structure
+from publisher_engine import PublisherEngine
+from publishers.mock import MockPublisher
+
 
 def main():
     structure_file = Path("data/structure.yaml")

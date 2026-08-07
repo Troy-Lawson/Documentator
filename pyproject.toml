@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "documentator"
+version = "0.1.0.dev0"
+description = "Define and publish documentation page structures from YAML"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Troy Lawson" }]
+dependencies = [
+    "click>=8.1,<9",
+    "PyYAML>=6.0,<7",
+    "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<9",
+    "ruff>=0.12,<1",
+]
+
+[project.scripts]
+documentator = "documentator:cli"
+
+[tool.setuptools]
+py-modules = ["documentator", "publisher_engine"]
+
+[tool.setuptools.packages.find]
+include = ["loaders*", "models*", "publishers*", "storage*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"

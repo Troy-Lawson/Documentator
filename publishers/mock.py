@@ -1,7 +1,7 @@
 from publishers.base import BasePublisher
 
-class MockPublisher(BasePublisher):
 
+class MockPublisher(BasePublisher):
     def __init__(self):
         self.next_id = 1
         self.tree = {}
@@ -23,10 +23,7 @@ class MockPublisher(BasePublisher):
 
         print(f"CREATE {page.title} ({page_id})")
 
-        record = {
-            "id": page_id,
-            "page": page
-        }
+        record = {"id": page_id, "page": page}
 
         self.tree[self._make_key(page, parent)] = record
 

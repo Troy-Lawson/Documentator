@@ -1,8 +1,7 @@
-
 from models.page import Page
 
-class PublisherEngine:
 
+class PublisherEngine:
     def __init__(self, publisher):
         self.publisher = publisher
 

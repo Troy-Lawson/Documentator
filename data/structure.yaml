@@ -1,13 +1,10 @@
-title: CMS
+title: Engineering Handbook
 
 children:
   - title: Onboarding
-  - title: General Operations
-  - title: Clients
+  - title: Operations
+  - title: Services
     children:
-      - title: ESDC
-      - title: IRCC
+      - title: Example Service
   - title: Platforms
   - title: Daily Notes
-  - title: Operations
-   
